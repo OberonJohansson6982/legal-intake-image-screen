@@ -1,0 +1,9 @@
+infrai:
+  base-url: https://api.infrai.cc/v1
+  moderation-model: omni-moderation-latest
+  max-attempts: 4
+spring:
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB

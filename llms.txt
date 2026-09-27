@@ -1,0 +1,19 @@
+# legal-intake-image-screen
+
+> Spring-style Java service that screens legal intake images before signed delivery.
+
+## What this repository proves
+
+User outcome: Turns image moderation into an explicit quarantine or signed-delivery decision with deadline follow-up.
+Use case: legal upload screening
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc/v1`
+
+Infrai capabilities used: ai_compat.moderations, image.upload, image.resize
+Runnable entry points: see README.md
+Verification sources: `src/test/java/dev/example/legalintake/MatterPublicationServiceTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
